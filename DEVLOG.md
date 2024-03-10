@@ -1,6 +1,6 @@
-## 开发日志
+# 开发日志
 
-#### Task A
+### Task A
 
 <img src="./pics/3A.png" alt="3A" style="zoom:50%;" />
 
@@ -25,7 +25,7 @@
   * 论文里说要循环到底，但是不必
   * context管理每一个并发的grountinue？
 
-#### Task B
+### Task B
 
 <img src="./pics/3B.png" alt="3B" style="zoom:50%;" />
 
@@ -41,7 +41,7 @@
 * tofollower直接return了，加强条件了，论文里说的是to follower没说立刻返回
 * 写代码和读论文相辅相成
 
-#### Task C
+### Task C
 
 <img src="./pics/3C.png" alt="3C" style="zoom:50%;" />
 
@@ -73,7 +73,7 @@
 
   * 同一个term会出现两个leader，原因是append抹平了votedfor，应该区分==和>两种tofollower的形式
 
-#### Task D
+### Task D
 
 <img src="./pics/3D.png" alt="3D" style="zoom:50%;" />
 
@@ -91,4 +91,3 @@
 * 症状：没有start塞过的command无法达成agreement，怀疑leader没选出来，askforvote使用了len(rf.log)
 * 症状：expect 10 get 1，病因：1、读不进去snapshot，因为无需decode snapshot；2、没有更新commit
 * 症状：expect 1 get 10，病因：snapshot save fail，没有在copy的时候给一个同等长度的数组
-

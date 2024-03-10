@@ -12,4 +12,4 @@
 
 
 
-附：<a href="https://github.com/Breeze-P/my-raft/DEVLOG.md">开发文档</a>
+附：<a href="https://github.com/Breeze-P/my-raft/blob/main/DEVLOG.md">开发文档</a>
